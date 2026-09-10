@@ -1,2 +1,2 @@
 # Yonsei-data-lab-project
-It's the project to make a website for someone who join the Yonsei Data lab first time
+Yonsei data lab에 처음 입학한 학생을 위한 웹페이지를 제작하는 프로젝트입니다. 
