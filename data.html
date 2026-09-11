@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Data | Datalab Starter Kit</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+  <header>
+
+    <a href="index.html" class="logo">
+      Datalab Starter Kit
+    </a>
+
+    <button id="theme-toggle">
+      🌙
+    </button>
+
+  </header>
+
+
+  <main class="guide-page">
+
+
+    <a href="index.html#research" class="back-link">
+      ← Back to Research Workflow
+    </a>
+
+
+    <p class="eyebrow">
+      RESEARCH WORKFLOW · 03
+    </p>
+
+
+    <h1>
+      Data
+    </h1>
+
+
+    <p class="guide-intro">
+      Datalab에서는 연구 질문에 따라 다양한 형태의 데이터를 활용합니다.
+      논문과 인용정보, 소셜미디어, 설문, 네트워크, 건강 및 사회 데이터를
+      분석 가능한 형태로 구성하고 서로 연결하기도 합니다.
+      Data 단계에서는 연구 질문에 적합한 데이터를 찾고,
+      데이터의 구조와 의미를 이해한 뒤 분석할 수 있는 형태로 정리합니다.
+    </p>
+
+
+
+    <!-- 1. DATA IN OUR LAB -->
+
+    <section class="guide-section">
+
+      <h2>1. Data We Work With</h2>
+
+      <p>
+        Datalab의 연구에서는 하나의 데이터 유형에만 국한되지 않고,
+        연구 질문에 따라 다양한 데이터와 분석 단위를 활용합니다.
+      </p>
+
+
+      <div class="data-grid">
+
+
+        <div class="data-card">
+
+          <span>01</span>
+
+          <h3>Scholarly Data</h3>
+
+          <p>
+            논문, 저자, 인용, 학술지, 연구팀 등의 데이터를 활용해
+            과학의 구조와 연구 활동을 분석합니다.
+          </p>
+
+        </div>
+
+
+        <div class="data-card">
+
+          <span>02</span>
+
+          <h3>Survey Data</h3>
+
+          <p>
+            개인의 경험, 태도, 행동과 건강 상태 등을 측정한
+            설문 데이터를 활용합니다.
+          </p>
+
+        </div>
+
+
+        <div class="data-card">
+
+          <span>03</span>
+
+          <h3>Social Media & Text</h3>
+
+          <p>
+            SNS 게시물, 온라인 담론, 텍스트와 메타데이터를 활용해
+            사람들의 행동과 사회적 현상을 분석합니다.
+          </p>
+
+        </div>
+
+
+        <div class="data-card">
+
+          <span>04</span>
+
+          <h3>Network Data</h3>
+
+          <p>
+            공저, 인용, 협업과 같은 관계를 네트워크 형태로 구성해
+            사람과 정보 사이의 연결 구조를 분석합니다.
+          </p>
+
+        </div>
+
+
+        <div class="data-card">
+
+          <span>05</span>
+
+          <h3>Health & Social Data</h3>
+
+          <p>
+            건강과 정신건강, 사회적 위험 및 환경적 요인과 관련된
+            다양한 데이터를 분석합니다.
+          </p>
+
+        </div>
+
+
+        <div class="data-card">
+
+          <span>06</span>
+
+          <h3>Multi-source Data</h3>
+
+          <p>
+            하나의 데이터만으로 설명하기 어려운 문제에서는
+            설문과 소셜미디어처럼 서로 다른 데이터를 함께 활용하기도 합니다.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 2. RESEARCH QUESTION -->
+
+    <section class="guide-section">
+
+      <h2>2. Let the Question Choose the Data</h2>
+
+      <p>
+        가지고 있는 데이터에 연구 질문을 맞추기보다,
+        먼저 연구 질문을 정리하고 그 질문을 관찰할 수 있는
+        데이터가 무엇인지 생각해보세요.
+      </p>
+
+
+      <div class="note-example">
+
+        <p>
+          <strong>Ask yourself</strong>
+        </p>
+
+        <p>
+          무엇을 설명하거나 예측하고 싶은가?
+        </p>
+
+        <p>
+          분석의 대상은 사람, 문서, 연구자, 기관, 게시물 중 무엇인가?
+        </p>
+
+        <p>
+          어떤 변수나 행동을 관찰해야 연구 질문에 답할 수 있는가?
+        </p>
+
+        <p>
+          하나의 데이터로 충분한가, 여러 데이터를 결합해야 하는가?
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 3. UNIT OF ANALYSIS -->
+
+    <section class="guide-section">
+
+      <h2>3. Know Your Unit of Analysis</h2>
+
+      <p>
+        데이터를 보기 전에 각 행(row)이 무엇을 의미하는지
+        반드시 확인해야 합니다.
+        같은 연구 주제라도 분석 단위에 따라 데이터의 구조가 완전히 달라질 수 있습니다.
+      </p>
+
+
+      <div class="data-table">
+
+        <div class="data-row data-header">
+
+          <span>Unit</span>
+          <span>Example</span>
+          <span>Possible Question</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>Person</span>
+          <span>설문 응답자</span>
+          <span>어떤 요인이 개인의 행동과 관련되는가?</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>Paper</span>
+          <span>학술 논문</span>
+          <span>어떤 연구가 더 많이 인용되는가?</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>Post</span>
+          <span>SNS 게시물</span>
+          <span>어떤 언어적 패턴이 나타나는가?</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>Relation</span>
+          <span>공저 또는 인용 관계</span>
+          <span>연구자들은 어떻게 연결되어 있는가?</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 4. UNDERSTAND DATA -->
+
+    <section class="guide-section">
+
+      <h2>4. Understand Before You Analyze</h2>
+
+      <p>
+        데이터를 확보했다고 바로 모델을 실행하지 마세요.
+        먼저 데이터가 어떻게 만들어졌고 각 변수가 무엇을 의미하는지 이해해야 합니다.
+      </p>
+
+
+      <ul>
+
+        <li>
+          이 데이터는 누가, 어떤 목적으로 만들었는가?
+        </li>
+
+        <li>
+          표본이나 수집 대상은 누구인가?
+        </li>
+
+        <li>
+          데이터는 어떤 기간에 수집되었는가?
+        </li>
+
+        <li>
+          각 행과 열은 무엇을 의미하는가?
+        </li>
+
+        <li>
+          변수의 측정 방법과 단위는 무엇인가?
+        </li>
+
+        <li>
+          결측치는 어떻게 정의되어 있는가?
+        </li>
+
+        <li>
+          데이터가 포함하지 못하는 대상이나 정보는 무엇인가?
+        </li>
+
+      </ul>
+
+    </section>
+
+
+
+    <!-- 5. RAW DATA -->
+
+    <section class="guide-section">
+
+      <h2>5. Never Edit the Raw Data</h2>
+
+      <p>
+        처음 확보한 원본 데이터는 직접 수정하지 않는 것이 좋습니다.
+        데이터 처리 과정에서 문제가 생겼을 때
+        언제든 처음 상태로 돌아갈 수 있어야 합니다.
+      </p>
+
+
+      <div class="folder-example">
+
+        <code>
+project/<br>
+├── data/<br>
+│&nbsp;&nbsp;&nbsp;├── raw/<br>
+│&nbsp;&nbsp;&nbsp;├── interim/<br>
+│&nbsp;&nbsp;&nbsp;└── processed/<br>
+├── code/<br>
+├── output/<br>
+└── docs/
+        </code>
+
+      </div>
+
+
+      <p>
+        <strong>raw</strong>에는 처음 확보한 원본 데이터를,
+        <strong>interim</strong>에는 처리 과정의 중간 데이터를,
+        <strong>processed</strong>에는 최종 분석용 데이터를 저장합니다.
+      </p>
+
+    </section>
+
+
+
+    <!-- 6. CLEANING -->
+
+    <section class="guide-section">
+
+      <h2>6. Clean Reproducibly</h2>
+
+      <p>
+        데이터 정제와 전처리는 가능한 한 코드로 기록하세요.
+        누가 다시 실행하더라도 동일한 분석 데이터를 만들 수 있어야 합니다.
+      </p>
+
+
+      <div class="note-example">
+
+        <p>
+          <strong>Good</strong>
+        </p>
+
+        <p>
+          Python, R 등의 코드로 데이터 병합,
+          결측치 처리, 변수 생성과 필터링 과정을 남깁니다.
+        </p>
+
+
+        <p>
+          <strong>Avoid</strong>
+        </p>
+
+        <p>
+          원본 CSV나 Excel 파일을 직접 열어
+          값을 하나씩 삭제하거나 수정합니다.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 7. DATA DICTIONARY -->
+
+    <section class="guide-section">
+
+      <h2>7. Keep a Data Dictionary</h2>
+
+      <p>
+        몇 달 뒤에도 데이터를 이해할 수 있도록
+        주요 변수와 데이터 구조를 기록해두세요.
+        특히 여러 데이터를 결합하거나 공동연구를 할 때 중요합니다.
+      </p>
+
+
+      <div class="data-table">
+
+        <div class="data-row data-header">
+
+          <span>Variable</span>
+          <span>Description</span>
+          <span>Type</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>paper_id</span>
+          <span>논문의 고유 식별자</span>
+          <span>ID</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>citation_count</span>
+          <span>논문의 인용 횟수</span>
+          <span>Numeric</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>post_text</span>
+          <span>SNS 게시물의 본문</span>
+          <span>Text</span>
+
+        </div>
+
+
+        <div class="data-row">
+
+          <span>risk_group</span>
+          <span>연구에서 정의한 집단 구분</span>
+          <span>Categorical</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 8. DATA ETHICS -->
+
+    <section class="guide-section">
+
+      <h2>8. Think About Data Ethics</h2>
+
+      <p>
+        특히 사람의 행동, 건강 또는 소셜미디어 데이터를 다룰 때는
+        분석 가능 여부뿐 아니라 데이터를 어떻게 수집하고 사용할 수 있는지도
+        함께 검토해야 합니다.
+      </p>
+
+
+      <ul>
+
+        <li>
+          개인정보나 식별 가능한 정보가 포함되어 있는가?
+        </li>
+
+        <li>
+          연구 목적으로 사용할 수 있는 데이터인가?
+        </li>
+
+        <li>
+          데이터 이용 조건이나 플랫폼 정책이 있는가?
+        </li>
+
+        <li>
+          불필요한 개인정보는 제거하거나 분리했는가?
+        </li>
+
+        <li>
+          연구윤리 또는 IRB 검토가 필요한 연구인가?
+        </li>
+
+        <li>
+          공동연구자에게 공유 가능한 범위를 확인했는가?
+        </li>
+
+      </ul>
+
+    </section>
+
+
+
+    <!-- CHECKLIST -->
+
+    <section class="guide-section">
+
+      <h2>Checklist</h2>
+
+
+      <ul>
+
+        <li>
+          연구 질문에 필요한 데이터가 무엇인지 정의했는가?
+        </li>
+
+        <li>
+          분석 단위가 무엇인지 알고 있는가?
+        </li>
+
+        <li>
+          데이터가 어떻게 수집되었는지 확인했는가?
+        </li>
+
+        <li>
+          코드북과 주요 변수의 의미를 이해했는가?
+        </li>
+
+        <li>
+          원본 데이터를 별도로 보존했는가?
+        </li>
+
+        <li>
+          데이터 전처리 과정을 코드로 기록했는가?
+        </li>
+
+        <li>
+          변수와 데이터 구조를 문서화했는가?
+        </li>
+
+        <li>
+          개인정보와 연구윤리 문제를 확인했는가?
+        </li>
+
+        <li>
+          최종 분석용 데이터를 별도로 저장했는가?
+        </li>
+
+      </ul>
+
+    </section>
+
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
